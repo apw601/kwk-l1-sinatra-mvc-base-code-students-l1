@@ -86,12 +86,17 @@ else value_10 == "no"
   stressed += 1 
   upset += 1
 end
+
 mood_array = [happy, stressed, upset, peaceful]
 if mood_array.max == happy
+  puts "happy"
 elsif mood_array.max == peaceful
+  puts "peaceful"
 elsif mood_array.max == upset
+  puts "upset"
 elsif mood_array.max == stressed
+  puts "stressed"
+end
 end
 
 puts mood
-puts mood_array
