@@ -9,58 +9,119 @@
   </head>
   
   <body>
-    <nav class="navbar fixed navbar-expand-md navbar-light" style="background-color: white;" id="nav">
-        <a class="navbar-brand" href="index.erb">Mood Swings<img src="https://cdn3.iconfinder.com/data/icons/camping-outline-pt-3/100/107_-_swing_playground-512.png" width='50px'></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index">HOME <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="happy">happy</a>
-                </li>
-                 <li class="nav-item">
-                    <a class="nav-link" href="upset">upset</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="stressed">stressed</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="peaceful">peaceful</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">about us</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    
-    
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-interval="500">
-          <img class="d-block w-100" src="https://images.pexels.com/photos/67857/daisy-flower-spring-marguerite-67857.jpeg?cs=srgb&dl=nature-flowers-garden-67857.jpg&fm=jpg" alt="happy" height="600px">
-          <div class="carousel-caption d-none d-md-block">
-            <h2>happy</h2>
-          </div>
-        </div>
-        <div class="carousel-item" data-interval="500">
-          <img class="d-block w-100" src="https://ak5.picdn.net/shutterstock/videos/4002085/thumb/1.jpg" alt="sad">
-          <div class="carousel-caption d-none d-md-block">
-            <h2>sad</h2>
-          </div>
-        </div>
-        <div class="carousel-item" data-interval="500">
-          <img class="d-block w-100" src="http://luisjimenez.com/wp-content/uploads/2017/05/dog-1.jpg" alt="stressed">
-          <div class="carousel-caption d-none d-md-block">
-            <h2>stressed</h2>
-          </div>
-        </div>
-      </div>
-    </div>
+    <h1>WHAT'S YOUR MOOD? QUIZ</h1>
+    <form method=POST>
+      
+      <h3> DO YOU BELIEVE IN YOURSELF? </h3>
+      <input type="radio" name = "DO YOU BELIEVE IN YOURSELF?" value= "yes"> yes
+      <br>
+       <input type="radio" name = "DO YOU BELIEVE IN YOURSELF?" value= "no"> no
+       
+      <h3> ARE YOU CURRENTLY SATISFIED WITH YOUR LOVE LIFE? </h3>
+      <input type="radio" name = "ARE YOU CURRENTLY SATISFIED WITH YOUR LOVE LIFE?" value= "yes"> yes
+      <br>
+       <input type="radio" name = "ARE YOU CURRENTLY SATISFIED WITH YOUR LOVE LIFE?" value= "no"> no 
+       
+     <h3> COULD AN ANIMAL CHEER YOU UP RIGHT NOW? </h3>
+     <input type="radio" name = "COULD AN ANIMAL CHEER YOU UP RIGHT NOW?" value= "yes"> yes 
+      <br>
+       <input type="radio" name = "COULD AN ANIMAL CHEER YOU UP RIGHT NOW?" value= "no"> no 
+       
+     <h3> DO YOU HAVE A LOT ON YOUR PLATE AT THE MOMENT? </h3>
+     <input type="radio" name = "DO YOU HAVE A LOT ON YOUR PLATE AT THE MOMENT?" value= "yes"> yes 
+      <br>
+       <input type="radio" name = "DO YOU HAVE A LOT ON YOUR PLATE AT THE MOMENT?" value= "no"> no 
+       
+     <h3> WOULD MUSIC CALM YOU DOWN RIGHT NOW? </h3>
+     <input type="radio" name = "WOULD MUSIC CALM YOU DOWN RIGHT NOW?" value= "yes"> yes 
+      <br>
+       <input type="radio" name = "WOULD MUSIC CALM YOU DOWN RIGHT NOW?" value= "no"> no 
+       
+     <h3> DO YOU HAVE A CRUSH? </h3>
+     <input type="radio" name = "DO YOU HAVE A CRUSH?" value= "yes"> yes 
+      <br>
+       <input type="radio" name = "DO YOU HAVE A CRUSH?" value= "no"> no 
+       
+    <h3> HAVE YOU BEEN ON A VACATION RECENTLY? </h3>
+     <input type="radio" name = "HAVE YOU BEEN ON A VACATION RECENTLY?" value= "yes"> yes 
+      <br>
+       <input type="radio" name = "HAVE YOU BEEN ON A VACATION RECENTLY?" value= "no"> no 
+       
+    <h3> DO YOU ENJOY WATCHING VINES? </h3>
+     <input type="radio" name = "DO YOU ENJOY WATCHING VINES?" value= "yes"> yes 
+      <br>
+       <input type="radio" name = "DO YOU ENJOY WATCHING VINES?" value= "no"> no 
+       
+    <h3> ARE YOU IN THE MOOD TO LAUGH WITH FRIENDS? </h3>
+     <input type="radio" name = "ARE YOU IN THE MOOD TO LAUGH WITH FRIENDS?" value= "yes"> yes 
+      <br>
+       <input type="radio" name = "ARE YOU IN THE MOOD TO LAUGH WITH FRIENDS?" value= "no"> no 
+       
+    <h3> ARE YOU LIVING UP TO YOUR OWN EXPECTATIONS? </h3>
+     <input type="radio" name = "ARE YOU LIVING UP TO YOUR OWN EXPECTATIONS?" value= "yes"> yes 
+      <br>
+       <input type="radio" name = "ARE YOU LIVING UP TO YOUR OWN EXPECTATIONS?" value= "no"> no 
+      <br>
+      <br>
+       <input type="submit" value = "DISCOVER YOUR MOOD">
+       </form>
   </body>
 </html>
+
+  
+<!--  <body>-->
+<!--    <nav class="navbar fixed navbar-expand-md navbar-light" style="background-color: white;" id="nav">-->
+<!--        <a class="navbar-brand" href="index.erb">Mood Swings<img src="https://cdn3.iconfinder.com/data/icons/camping-outline-pt-3/100/107_-_swing_playground-512.png" width='50px'></a>-->
+<!--        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--            <span class="navbar-toggler-icon"></span>-->
+<!--        </button>-->
+        
+<!--        <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--            <ul class="navbar-nav ml-auto">-->
+<!--                <li class="nav-item active">-->
+<!--                    <a class="nav-link" href="index">HOME <span class="sr-only">(current)</span></a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="happy">happy</a>-->
+<!--                </li>-->
+<!--                 <li class="nav-item">-->
+<!--                    <a class="nav-link" href="upset">upset</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="stressed">stressed</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="peaceful">peaceful</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="">about us</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </nav>-->
+    
+    
+<!--    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">-->
+<!--      <div class="carousel-inner">-->
+<!--        <div class="carousel-item active" data-interval="500">-->
+<!--          <img class="d-block w-100" src="https://images.pexels.com/photos/67857/daisy-flower-spring-marguerite-67857.jpeg?cs=srgb&dl=nature-flowers-garden-67857.jpg&fm=jpg" alt="happy" height="600px">-->
+<!--          <div class="carousel-caption d-none d-md-block">-->
+<!--            <h2>happy</h2>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="carousel-item" data-interval="500">-->
+<!--          <img class="d-block w-100" src="https://ak5.picdn.net/shutterstock/videos/4002085/thumb/1.jpg" alt="sad">-->
+<!--          <div class="carousel-caption d-none d-md-block">-->
+<!--            <h2>sad</h2>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="carousel-item" data-interval="500">-->
+<!--          <img class="d-block w-100" src="http://luisjimenez.com/wp-content/uploads/2017/05/dog-1.jpg" alt="stressed">-->
+<!--          <div class="carousel-caption d-none d-md-block">-->
+<!--            <h2>stressed</h2>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </body>-->
+<!--</html>-->

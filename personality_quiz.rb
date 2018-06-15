@@ -1,7 +1,5 @@
-require 'colorize'
 
-puts "what's your mood? quiz".upcase
-sleep(1.5)
+
 def mood
   happy = 0
   stressed = 0 
@@ -86,17 +84,25 @@ else value_10 == "no"
   stressed += 1 
   upset += 1
 end
+result = ""
 
 mood_array = [happy, stressed, upset, peaceful]
 if mood_array.max == happy
-  puts "happy"
+  result = "happy"
+  #puts "happy"
 elsif mood_array.max == peaceful
-  puts "peaceful"
+  result = "peaceful"
+  #puts "peaceful"
 elsif mood_array.max == upset
-  puts "upset"
+  result = "upset"
+  #puts "upset"
 elsif mood_array.max == stressed
-  puts "stressed"
+  result = "stressed"
+  #puts "stressed"
 end
+puts result
+return result
 end
 
-puts mood
+mood
+
